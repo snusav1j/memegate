@@ -21,15 +21,14 @@ gem "jbuilder"
 # gem "bcrypt", "~> 3.1.7"
 gem 'haml-rails', '~> 2.1'
 gem 'sass-rails'
-gem 'jquery-rails', '~> 4.6'
+gem 'jquery-rails'
 gem 'sprockets-rails', '~> 3.5', '>= 3.5.2'
 gem 'font-awesome-rails'
 gem 'toastr-rails'
 # gem 'net-http'
 # gem 'uri'
-gem "rails_charts"
 gem 'devise', '~> 4.9', '>= 4.9.4'
-gem 'coffee-rails', '~> 5.0'
+gem 'coffee-rails'
 gem 'bootstrap'
 gem 'sassc-rails'
 gem 'rails-i18n'

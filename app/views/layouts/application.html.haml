@@ -1,0 +1,24 @@
+!!!
+%html
+  %head
+    %meta{:content => "width=device-width, initial-scale=1, maximum-scale=1, viewport-fit=cover, user-scalable=no", :name => "viewport"}
+    %meta{ charset: "utf-8" }
+    %meta{:content => "yes", :name => "mobile-web-app-capable"}
+    %meta{:content => "yes", :name => "apple-mobile-web-app-capable"}
+    %meta{name: "keywords", content: "crypto, meme, gate, meme gate, MemeGate, meme coins, meme tokens, crypto memes, Web3, decentralized platform, list meme coins, crypto chaos, blockchain memes, meme coin market, meme market, crypto market, legit crypto, moderated memes, track meme coins, meme coin ecosystem, meme coin listings, crypto trends, decentralized exchange, meme crypto platform"}
+    %meta{property: "og:title", content: "MemeGate | Discover & List Real Meme Coins on a Trusted Crypto Platform"}
+    %meta{property: "og:description", content: "MemeGate is the place where memes get serious. Explore meme coins, track the trends, and list your own token on a trusted Web3 platform. Fun, but legit."}
+    %meta{property: "og:image", content: "URL_to_image.png"}
+    %meta{name: "twitter:title", content: "MemeGate | The Only Gate Where Memes Get Serious"}
+    %meta{name: "twitter:description", content: "MemeGate is your destination to discover and list real meme coins on a trusted Web3 platform. Track trends and join the meme movement."}
+    %meta{name: "description", content: "MemeGate — the only gate where memes get serious. Discover real meme coins without the nonsense, follow the chaos, and list your own token on a trusted Web3 platform. Fun, but focused."}
+
+    = stylesheet_link_tag 'application', media: 'all'
+    = javascript_include_tag 'application', type: "module"
+    = csrf_meta_tags
+    %link{:href => "/manifest.json", :rel => "manifest"}
+    %link{ rel: "icon", href: "/logos/memegate_mini_logo_2.png", type: "image/png" }
+
+    %title MemeGate | Meme Explorer | Discover & List Meme Coins
+  %body
+    = yield

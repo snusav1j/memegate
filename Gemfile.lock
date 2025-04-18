@@ -303,8 +303,6 @@ GEM
     rails-i18n (8.0.1)
       i18n (>= 0.7, < 2)
       railties (>= 8.0.0, < 9)
-    rails_charts (0.0.6)
-      rails
     railties (8.0.2)
       actionpack (= 8.0.2)
       activesupport (= 8.0.2)
@@ -456,21 +454,20 @@ DEPENDENCIES
   bootstrap
   brakeman
   capybara
-  coffee-rails (~> 5.0)
+  coffee-rails
   debug
   devise (~> 4.9, >= 4.9.4)
   font-awesome-rails
   haml-rails (~> 2.1)
   importmap-rails
   jbuilder
-  jquery-rails (~> 4.6)
+  jquery-rails
   kamal
   material_icons
   propshaft
   puma (>= 5.0)
   rails (~> 8.0.0)
   rails-i18n
-  rails_charts
   rubocop-rails-omakase
   sass-rails
   sassc-rails
