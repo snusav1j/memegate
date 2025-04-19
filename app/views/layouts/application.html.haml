@@ -18,6 +18,7 @@
     = csrf_meta_tags
     %link{:href => "/manifest.json", :rel => "manifest"}
     %link{ rel: "icon", href: "/logos/memegate_mini_logo_2.png", type: "image/png" }
+    %link{ rel: "shortcut icon", href: "/logos/memegate_mini_logo_2.png", type: "image/x-icon" }
 
     %title MemesGate | Meme Explorer | Discover & List Meme Coins
   %body{ class: "#{current_user.present? ? '' : 'grid-background'}", style: "#{current_user.present? ? '' : 'overflow-y: hidden !important'}" }
