@@ -1,0 +1,25 @@
+.autorization-form
+  %h2 Sign up
+
+  = form_for(resource, as: resource_name, url: registration_path(resource_name), html: { id: "signup-form" }) do |f|
+    -# = render "devise/shared/error_messages", resource: resource
+
+    .field
+      = f.label :email
+      %br
+      = f.email_field :email, autofocus: true, autocomplete: "email"
+
+    .field
+      = f.label :password
+      %br
+      = f.password_field :password, autocomplete: "new-password"
+
+    .field
+      = f.label :password_confirmation
+      %br
+      = f.password_field :password_confirmation, autocomplete: "new-password"
+
+    .actions
+      %button.medium-btn.gradient-hover.max-width{ type: 'submit', form: 'signup-form' }= "Sign up"
+
+  = render "devise/shared/links"

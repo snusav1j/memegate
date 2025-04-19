@@ -7,13 +7,22 @@
           %a{ href: "#" }= "Pricing"
           %a{ href: "#" }= "FAQ"
           %a{ href: "#" }
-            %button.small-btn.gradient-hover= "List meme"
+            %button.small-btn.gradient-hover
+              = "List meme"
+              %span.text-muted.test-small= "(soon)"
         .header-logo
-          %h1 MemeGate
+          %h1 MemesGate
         .header-buttons
-          %button.medium-btn.gradient-hover
-            %span Register
-            %span.text-muted.text-small - it's free
+          - if !current_user.present?
+            = link_to login_path do
+              %button.medium-btn.gradient-hover
+                %span Login
+                %span.text-muted.text-small - it's free
+          - else
+            = current_user
+            = link_to logout_path, method: :delete do
+              %button.medium-btn.gradient-hover
+                %span Logout
       .header-additional-info
         %h2
           NEW ERA OF
@@ -33,7 +42,7 @@
         %div.text-muted{ style: "font-size: 18px;" }
           Secure. Grow. Repeat.
         .text-right{ style: "width: 25%;" }
-          .text-right{ style: "font-size: 18px;" }
+          .text-right{ style: "font-size: 16px;" }
             %span.text-primary MemeGate. 
             Where memes become money.
             Get in early. Buy the coin — Own the future.

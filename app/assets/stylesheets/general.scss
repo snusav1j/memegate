@@ -31,6 +31,7 @@
   --main-text-color: #eff1f1;
   --main-text-color-dark: #202020;
 
+  --input-bg: #535353;
 
   --brand-color: #9efa49;
   --brand-color-dark: #71a83d;
@@ -40,8 +41,61 @@
   --light-color: #2a2a2b;
   
 }
+.autorization-form{
+  margin: 150px auto;
+}
+.autorization-form{
+  background: var(--main-color-light-3);
+  color: var(--main-text-color);
+  width: 500px;
+  padding: 30px;
+  border-radius: 15px;
+}
+.autorization-form h2{
+  color: var(--brand-color) !important;
+  text-shadow: var(--brand-text-shadow) !important;
+  margin-bottom: 15px;
+  border-bottom: 1px solid #2d2d2d;
+  padding-bottom: 16px;
+}
+label{
+  margin-bottom: -15px !important;
+  // display: block;
+}
+.field:not(:last-child){
+  margin-bottom: 20px;
+}
+input[type=checkbox]{
+  width: fit-content;
+}
+.max-width{
+  width: 100%;
+}
+input, select{
+  margin-top: 5px;
+  width: 100%;
+  padding: 6px;
+  border-radius: 5px;
+  background: var(--input-bg) !important;
+  background-color: var(--input-bg) !important;
+  font-weight: 700;
+  color: #fff;
+  border: unset;
+  font-family: "Roboto Mono", monospace;
+}
+input:focus,
+input:active,
+select:focus,
+select:active,
+textarea:focus,
+textarea:active{
+  outline: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+  color: inherit;
+}
 
-// 
 button, a, li, h1, h2, h3, h4, h5, h6, textarea, input, select, p, ul, div, span{
   font-family: "Roboto Mono", monospace;
 }
@@ -79,7 +133,15 @@ button{
   border: 2px solid var(--border-color);
   cursor: pointer;
 }
-
+.underlined{
+  text-decoration: underline;
+}
+.crossed{
+  text-decoration: line-through;
+}
+.italic{
+  font-style: italic;
+}
 .gradient-hover {
   background-size: 0% 100%;
   transition: background-color .5s;
