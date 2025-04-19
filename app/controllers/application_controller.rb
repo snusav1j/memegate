@@ -22,7 +22,11 @@ class ApplicationController < ActionController::Base
   end
   
   def ensure_super_user
-    if !current_user.have_super_permission?
+    if current_user
+      if !current_user.have_super_permission?
+        redirect_to root_path
+      end
+    else
       redirect_to root_path
     end
   end
