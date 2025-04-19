@@ -26,9 +26,9 @@
         .header.grid-background
           .header-main-info
             .header-links
-              %a{ href: "#" }= "Explore"
-              %a{ href: "#" }= "Pricing"
-              %a{ href: "#" }= "FAQ"
+              %a.hover-underline{ href: "#" }= "Explore"
+              %a.hover-underline{ href: "#" }= "Pricing"
+              %a.hover-underline{ href: "#" }= "FAQ"
               %a{ href: "#" }
                 %button.small-btn.gradient-hover
                   = "List meme"
@@ -44,9 +44,10 @@
                     %span.text-muted.text-small - it's free
               - else
                 .user-controls
-                  .username
-                    = current_user.fullname
-                    %span.text-muted.text-small= "(#{current_user.role})"
+                  = link_to user_path(current_user) do
+                    .username
+                      = current_user.fullname
+                      %span.text-muted.text-small= "(#{current_user.role})"
                   = link_to logout_path, method: :delete do
                     %button.medium-btn.gradient-hover
                       %span Logout
