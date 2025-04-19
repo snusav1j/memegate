@@ -41,6 +41,9 @@
   --light-color: #2a2a2b;
   
 }
+.content{
+  color: var(--main-text-color);
+}
 .autorization-form{
   margin: 150px auto;
 }
@@ -50,6 +53,9 @@
   width: 500px;
   padding: 30px;
   border-radius: 15px;
+}
+.header-logo a{
+  color: var(--brand-color) !important;
 }
 .autorization-form h2{
   color: var(--brand-color) !important;
