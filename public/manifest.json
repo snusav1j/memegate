@@ -4,11 +4,6 @@
   "icons": [
     {
       "src": "/logos/memegate_large_logo.png",
-      "sizes": "128x128",
-      "type": "image/png"
-    },
-    {
-      "src": "/logos/memegate_mini_logo_2.png",
       "sizes": "512x512",
       "type": "image/png"
     }
