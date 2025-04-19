@@ -20,7 +20,7 @@
       = f.password_field :password, autocomplete: "new-password"
       - if @minimum_password_length
         %br/
-        %em= @minimum_password_length characters minimum
+        -# %em= @minimum_password_length characters minimum
 
     .field
       = f.label :password_confirmation
@@ -38,7 +38,8 @@
 
   %h3 Cancel my account
 
-  %div Unhappy? 
+  %div 
+    Unhappy? 
     = button_to "Cancel my account", registration_path(resource_name), data: { confirm: "Are you sure?", turbo_confirm: "Are you sure?" }, method: :delete
 
   = link_to "Back", :back
