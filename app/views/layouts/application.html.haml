@@ -50,7 +50,7 @@
                       = current_user.fullname
                     - if current_user.have_super_permission?
                       = link_to users_path do
-                        %span.text-muted.text-small.hover-underline= "(#{current_user.role})"
+                        %span.text-muted.text-small.gradient-hover= "(#{current_user.role})"
                   = link_to logout_path, method: :delete do
                     %button.medium-btn.gradient-hover
                       %span Logout
