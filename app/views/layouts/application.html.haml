@@ -44,10 +44,13 @@
                     %span.text-muted.text-small - it's free
               - else
                 .user-controls
-                  = link_to user_path(current_user) do
-                    .username
+                  
+                  .username
+                    = link_to user_path(current_user) do
                       = current_user.fullname
-                      %span.text-muted.text-small= "(#{current_user.role})"
+                    - if current_user.have_super_permission?
+                      = link_to users_path do
+                        %span.text-muted.text-small.hover-underline= "(#{current_user.role})"
                   = link_to logout_path, method: :delete do
                     %button.medium-btn.gradient-hover
                       %span Logout

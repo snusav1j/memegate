@@ -17,6 +17,10 @@ class User < ApplicationRecord
     UserCoin.where(user_id: user_id)
   end
 
+  def have_super_permission?
+    self.role == ROLE_DIRECTOR || self.role == ROLE_CEO || self.role == ROLE_DEVELOPER
+  end
+
   def director?
     self.role == ROLE_DIRECTOR
   end

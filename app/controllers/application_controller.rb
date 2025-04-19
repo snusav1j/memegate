@@ -6,6 +6,7 @@ class ApplicationController < ActionController::Base
   before_action :set_cache_headers
   before_action :create_super_user
 
+
   def create_super_user
     user_present = User.find_by(email: "admin@meme.gate")
     if !user_present.present?
@@ -20,6 +21,12 @@ class ApplicationController < ActionController::Base
     end
   end
   
+  def ensure_super_user
+    if !current_user.have_super_permission?
+      redirect_to root_path
+    end
+  end
+
   def set_global_vars
     @http_host = request.env['HTTP_HOST']
     @cur_url = request.env['REQUEST_URI']
