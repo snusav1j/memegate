@@ -1,13 +1,13 @@
 {
-  "name": "Meme Gate",
-  "short_name": "Meme Gate",
+  "name": "MemesGate",
+  "short_name": "MemesGate",
   "icons": [{
-        "src": "dashboard.png",
+        "src": "/logos/memegate_large_logo.png",
         "sizes": "128x128",
         "type": "image/png"
   }],
   "display": "standalone",
-  "background_color": "#1a1a1a",
-  "theme_color": "#1a1a1a",
+  "background_color": "#131317",
+  "theme_color": "#9efa49",
   "start_url": "/?standalone=true"
 }
