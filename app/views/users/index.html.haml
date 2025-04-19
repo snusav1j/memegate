@@ -1,3 +1,4 @@
 - if current_user.have_super_permission?
+  %div Users:
   - @users.each do |user|
     %div= user
