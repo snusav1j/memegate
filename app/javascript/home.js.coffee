@@ -1,2 +1,2 @@
 $ ->
-  console.log($('asd'))
+  console.log("it's just a beggining...")
