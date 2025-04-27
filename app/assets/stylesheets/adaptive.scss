@@ -1,0 +1,32 @@
+@media screen and (max-width: 991px){
+  .hide-on-mobile{
+    display: none !important;
+  }
+  .header-additional-info h2{
+    font-size: 50px !important;
+  }
+  .header-main-info{
+    text-align: center !important;
+    align-items: center !important;
+    justify-content: center !important;
+    display: block !important;
+  }
+  .cursor-container{
+    width: 35px !important;
+    height: 8px !important;
+  }
+  .body{
+    font-size: 12px;
+  }
+  .show-on-mobile{
+    display: block !important;
+  }
+}
+button{
+  white-space: nowrap;
+}
+@media screen and (min-width: 992px){
+  .hide-on-desktop{
+    display: none !important;
+  }
+}
