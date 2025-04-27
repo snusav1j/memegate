@@ -29,7 +29,7 @@
               %a.hover-underline{ href: "#" }= "Explore"
               -# %a.hover-underline{ href: "#" }= "Pricing"
               %a.hover-underline{ href: "/faq" }= "FAQ"
-              %a{ href: "#" }
+              = link_to list_memes_path do
                 %button.small-btn.gradient-hover
                   = "List meme"
                   %span.text-muted.test-small= "(soon)"

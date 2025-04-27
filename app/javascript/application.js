@@ -4,5 +4,6 @@
 
 
 //= require home
+//= require coins
 
 

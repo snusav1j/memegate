@@ -69,4 +69,10 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :coins do
+    collection do
+
+    end
+  end
+
 end
