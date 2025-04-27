@@ -46,7 +46,7 @@
                 .user-controls
                   .username
                     = link_to user_path(current_user) do
-                      = current_user.fullname
+                      = current_user.email
                     - if current_user.have_super_permission?
                       = link_to users_path do
                         %span.text-muted.text-small.gradient-hover= "(#{current_user.role})"
