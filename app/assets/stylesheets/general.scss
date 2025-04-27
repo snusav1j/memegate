@@ -35,11 +35,10 @@
 
   --brand-color: #9efa49;
   --brand-color-dark: #71a83d;
-  --brand-text-shadow: 0px 0px 10px var(--brand-color);
+  --brand-text-shadow: 0px 0px 5px var(--brand-color);
   --border-color: #4b4b4b;
 
   --light-color: #2a2a2b;
-  
 }
 .content{
   color: var(--main-text-color);
@@ -152,7 +151,9 @@ a{
   padding: 5px 10px;
   border-radius: 10px;
 }
-
+.bordered{
+  border: 2px solid var(--border-color);
+}
 button{
   font-size: 14px;
   border: unset;
@@ -331,13 +332,21 @@ hr{
   border: 2px solid var(--brand-color-dark);
 
 }
+.brand-color{
+  color: var(--brand-color);
+}
+.brand-bg{
+  background: var(--brand-color);
+}
 .default-btn{
   padding: 5px 10px;
   border-radius: 5px;
   transition: .3s ease;
   background: var(--default) !important;
 }
-
+.body{
+  font-size: 14px !important;
+}
 .success-btn:hover{
   background: var(--hover-success) !important;
 }

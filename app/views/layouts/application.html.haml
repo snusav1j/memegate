@@ -26,9 +26,9 @@
         .header.grid-background
           .header-main-info
             .header-links.hide-on-mobile
-              -# %a.hover-underline{ href: "#" }= "Explore"
+              %a.hover-underline{ href: "#" }= "Explore"
               -# %a.hover-underline{ href: "#" }= "Pricing"
-              %a.hover-underline{ href: "#" }= "FAQ"
+              %a.hover-underline{ href: "/faq" }= "FAQ"
               %a{ href: "#" }
                 %button.small-btn.gradient-hover
                   = "List meme"
@@ -36,32 +36,30 @@
             .header-logo
               = link_to root_path do
                 %h1 MemesGate
-                -# %h1.hide-on-desktop MG
             .header-buttons
-              -# - if !current_user.present?
-              -#   = link_to login_path do
-              -#     %button.medium-btn.gradient-hover
-              -#       %span Login
-              -#       %span.text-muted.text-small - it's free
-              -# - else
-              -#   .user-controls
-                  
-              -#     .username
-              -#       = link_to user_path(current_user) do
-              -#         = current_user.fullname
-              -#       - if current_user.have_super_permission?
-              -#         = link_to users_path do
-              -#           %span.text-muted.text-small.gradient-hover= "(#{current_user.role})"
-              -#     = link_to logout_path, method: :delete do
-              -#       %button.medium-btn.gradient-hover
-              -#         %span Logout
+              - if !current_user.present?
+                = link_to login_path do
+                  %button.small-btn.gradient-hover
+                    %span Login
+                    %span.text-muted.text-small - it's free
+              - else
+                .user-controls
+                  .username
+                    = link_to user_path(current_user) do
+                      = current_user.fullname
+                    - if current_user.have_super_permission?
+                      = link_to users_path do
+                        %span.text-muted.text-small.gradient-hover= "(#{current_user.role})"
+                  = link_to logout_path, method: :delete do
+                    %button.small-btn.gradient-hover
+                      %span Logout
           - if (root_path == @cur_url)
             .header-additional-info
               %h2
                 NEW ERA OF
                 %span.colorized
                   MEME СOINS
-                  %span.cursor-container
+                  %span.cursor-container.hide-on-mobile
                     .cursor
             .header-preview
               .text-left{ style: "width: 25%;" }
@@ -70,8 +68,7 @@
                     MemesGate is your no-nonsense platform to real meme coins.
                     Track the chaos, explore hand-picked tokens, and list your own with zero drama — just decentralized fun.
                 %div.hide-on-mobile{ style: 'margin-top: 25px;' }
-                  %button.medium-btn.gradient-hover
-                    %span How MemesGate works
+                  %a.medium-btn.gradient-hover.bordered{ href: "/how_memesgate_works" }= "How MemesGate works"
               %div.text-muted.hide-on-mobile{ style: "font-size: 18px;" }
                 Secure. Grow. Repeat.
               .text-right{ style: "width: 25%;" }
@@ -91,7 +88,6 @@
           -# %a.hover-underline{ href: "#" }= "Pricing"
           -# %div
           -#   %a.hover-underline{ href: "#" }= "FAQ"
-
           %div.text-center
             %a.hover-underline{ href: "#" }= "How MemesGate works"
 

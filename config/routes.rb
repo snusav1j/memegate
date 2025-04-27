@@ -49,5 +49,24 @@ Rails.application.routes.draw do
     end
   end
 
+  # info routes (without code)
+
+  resources :faq do
+    collection do
+
+    end
+  end
+
+  resources :how_memesgate_works do
+    collection do
+
+    end
+  end
+
+  resources :list_memes do
+    collection do
+
+    end
+  end
 
 end

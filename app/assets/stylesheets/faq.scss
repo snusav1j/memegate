@@ -1,0 +1,36 @@
+.info-header{
+  text-align: center;
+  // margin-bottom: 20px;
+  font-size: 16px;
+}
+.info{
+  width: 65%;
+  margin: 0 auto;
+}
+
+.info-item{
+  padding: 15px;
+  border-radius: 10px;
+  display: block;
+}
+
+.info-item > div{
+  background: var(--main-color-light-2);
+  width: 100%;
+  display: block;
+  padding: 15px;
+  border-radius: 10px 10px 0 0;
+}
+
+.info-item > div i{
+  color: #919191;
+}
+
+.info-item > span{
+  background: var(--main-color-light-3);
+  width: 100%;
+  display: block;
+  padding: 15px;
+  color: #c4c4c4;
+  border-radius: 0 0 10px 10px;
+}
