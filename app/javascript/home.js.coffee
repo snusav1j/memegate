@@ -1,2 +1,2 @@
 $ ->
-  console.log("it's just a beggining...")
+  console.log("this is just the beginning...")
